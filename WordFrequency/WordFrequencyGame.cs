@@ -41,10 +41,10 @@ namespace WordFrequency
                 List<string> strList = new List<string>();
 
                 //stringJoiner joiner = new stringJoiner("\n");
-                foreach (Input w in inputList)
+                foreach (Input word in inputList)
                 {
-                    string s = w.Value + " " + w.WordCount;
-                    strList.Add(s);
+                    string singleString = word.Value + " " + word.WordCount;
+                    strList.Add(singleString);
                 }
 
                 return string.Join("\n", strList.ToArray());
